@@ -1,0 +1,27 @@
+.item{
+	padding: 20px;
+	border: 1px solid rgb(207, 207, 207);
+	border-radius: 10px;
+	text-align: left;
+}
+
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.btn{
+	padding: 13px 20px;
+	border: 0;
+	background: #580eda;
+	color: white;
+	border-radius: 5px;
+	margin: 5px;
+	cursor: pointer;
+	transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn:disabled{
+	cursor: not-allowed;
+	background: #d4d1da;
+}
