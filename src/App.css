@@ -4,3 +4,20 @@
 p{
   color: #2a2a2a;
 }
+hr{
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+fieldset{
+  border: none;
+}
+
+.App > div{
+ padding: 1rem;
+}
+
+.App > div:nth-child(even){
+  background: whitesmoke;
+}

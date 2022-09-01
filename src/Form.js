@@ -39,6 +39,7 @@ const Form = () => {
 		<p>radio: {formData.radio}</p>
 		<p>checkbox: {checked.toString()}</p>
 		<p>Select: {formData.select}</p>
+		
 	</div>
   )
 }

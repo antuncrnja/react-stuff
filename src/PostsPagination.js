@@ -63,7 +63,7 @@ const Header = () => {
 			<p className={styles.item} key={post.id} dangerouslySetInnerHTML={{__html: post.title.rendered}}
 		  />
 		))}
-{loading && <p>loading posts...</p>}
+{loading && <h3>loading posts...</h3>}
 <Button page={page} handlePage={handlePage} disabled={page*10 >= postCount}/>
 
 	</div>

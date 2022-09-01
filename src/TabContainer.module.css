@@ -1,0 +1,21 @@
+.tabContainer{
+	display: flex;
+	gap: 1rem;
+}
+.tab{
+	padding: 1rem;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+}
+.tab__is_active{
+	
+}
+.tab__is_active h3{
+	color: #580eda;
+}
+.tab p{
+	opacity: 0;
+}
+.tab__is_active p{
+	opacity: 1;
+}

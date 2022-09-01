@@ -9,11 +9,10 @@ const Form2 = () => {
 		e.preventDefault();
 		setFormData(values => ({...values, checked: checked}))
 
-		console.log(formData)
+		console.log(formData) 
 		
 		//Add formData to database
 
-		
 	}
 
 	const handleFormChange = (e) => {
@@ -30,7 +29,7 @@ const Form2 = () => {
 			<input type="email" placeholder="email" name="email" value={formData.email ? formData.email : ''} onChange={handleFormChange}/>
 				<br /><br />
 
-				<input type="checkbox" value={checked} name="checkbox" onChange={ ()=> setChecked(oldValue => !oldValue) }/>
+				<input type="checkbox" value={checked} name="checkbox" onChange={ ()=> setChecked(prev => !prev) }/>
 			
 				<br /><br />
 		
