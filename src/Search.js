@@ -8,7 +8,7 @@ const Search = () => {
 
 
 	const [searchParams, setSearchParams] = useSearchParams()
-	const [query, setQuery] = useState(searchParams.get('query') ? searchParams.get('query') : '')
+	const [query, setQuery] = useState(searchParams.get('q') ? searchParams.get('q') : '')
 
 	useEffect( ()=>{
 		setLoading(true)
@@ -31,9 +31,8 @@ const Search = () => {
 	const handleSearch = (e) => {
 		const newQuery = e.target.value;
 		setQuery(newQuery)
-		setSearchParams({
-			query: newQuery
-		})
+
+		newQuery.length > 0 ? setSearchParams({q: newQuery}) : setSearchParams()
 	}
 
   return (
