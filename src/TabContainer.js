@@ -7,14 +7,14 @@ const TabContainer = ({children}) => {
   return (
 	<div>
 		<h1>React Tabs</h1>
-		<div class={styles.tabContainer}>
+		<div className={styles.tabContainer}>
 			
 			{children.map((item, index) => (
-				<div className={active === `tab-${index}` ? styles.tab__is_active + ' ' + styles.tab : styles.tab} onClick={() => setActive(`tab-${index}`)}>{item}</div>
+				<div key={index} className={active === `tab-${index}` ? styles.tab__is_active + ' ' + styles.tab : styles.tab} onClick={() => setActive(`tab-${index}`)}>{item}</div>
 			))}
 		</div>
 	
-	</div>
+	</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
   )
 }
 export default TabContainer
