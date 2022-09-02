@@ -66,7 +66,7 @@ const Search = () => {
 		
 		{data.length <= 0 && <p>There are no posts that contains: {query}</p>}
 		{data.map(post => (
-			<div key={post.id}>{post.title.rendered}</div>
+			<p key={post.id}>{post.title.rendered}</p>
 		))}
 	</div>
   )

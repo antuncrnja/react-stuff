@@ -57,6 +57,7 @@ const Header = () => {
 	if(error) return 'Something went wrong'
 		
   return (
+	<div>
 	<div className={styles.container}>
 		<h1>React Pagination</h1>
 		{data?.map(post => (
@@ -66,6 +67,7 @@ const Header = () => {
 {loading && <h3>loading posts...</h3>}
 <Button page={page} handlePage={handlePage} disabled={page*10 >= postCount}/>
 
+	</div>
 	</div>
   )
 }
